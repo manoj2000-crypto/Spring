@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="homeAddressObj" class="personDetail.HomeAddress">
+		<property name="flatNumber" value="11"></property>
+		<property name="Housename" value="Suvarnatara"></property>
+	</bean>
+
+	<bean id="officeAddressObj" class="personDetail.OfficeAddress">
+		<property name="officeNumner" value="222"></property>
+		<property name="officeName" value="TCS"></property>
+	</bean>
+
+	<bean id="personObj" class="personDetail.Person">
+		<property name="personName" value="Manoj"></property>
+		<property name="address" ref="homeAddressObj"></property>
+		<property name="homeAddress" ref = "homeAddressObj"></property>
+		<property name="officeAddress" ref = "officeAddressObj"></property>
+	</bean>
+
+</beans>
