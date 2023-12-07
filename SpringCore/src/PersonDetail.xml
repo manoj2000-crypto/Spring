@@ -17,8 +17,8 @@
 	<bean id="personObj" class="personDetail.Person">
 		<property name="personName" value="Manoj"></property>
 		<property name="address" ref="homeAddressObj"></property>
-		<property name="homeAddress" ref = "homeAddressObj"></property>
-		<property name="officeAddress" ref = "officeAddressObj"></property>
+		<property name="homeAddress" ref="homeAddressObj"></property>
+		<property name="officeAddress" ref="officeAddressObj"></property>
 	</bean>
 
 </beans>
